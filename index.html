@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4Geeks Domain Generator V2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container p-2">
+        <div class="col-12 d-flex align-items-center mb-3 justify-content-between">
+            <h1 class="h1 text-primary">Domain Generator</h1>
+            <img src="./assets/4geeks-logo.png" width="80" alt="" srcset="" style="margin-right: 20px;">
+            
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 pb-3">
+                <label for="pronouns" class="mb-2"><strong>List of pronouns (comma separated)</strong></label>
+                <textarea class="form-control" placeholder="pronoun ,pronoun ..." id="pronouns"
+                    style="height: 100px"></textarea>
+            </div>
+            <div class="col-12 pb-3">
+                <label for="adjectives" class="mb-2"><strong>List of adjectives (comma separated)</strong></label>
+                <textarea class="form-control" placeholder="adjective, adjective ..." id="adjectives"
+                    style="height: 100px"></textarea>
+            </div>
+            <div class="col-12 pb-3">
+                <label for="adjectives" class="mb-2"><strong>List of nouns (comma separated)</strong></label>
+                <textarea class="form-control" placeholder="noun, noun ..." id="nouns" style="height: 100px"></textarea>
+            </div>
+            <div class="col-12 pb-3">
+                <label for="extensions" class="mb-2"><strong>List of extensions (comma separated)</strong></label>
+                <textarea class="form-control" placeholder="Ej: com, cl, io ..." id="extensions"
+                    style="height: 100px"></textarea>
+            </div>
+            <div class="col-md-12 py-4">
+                <button type="button" id="trigger" class="btn btn-primary">Get posibles domains</button>
+            </div>
+            <div class="col-md-12 mt-5 pb-3" id="results">
+                <h3 class="h3">Posible domains <span id="domainsCounter"></span></h3>
+                <ul class="list-group" id="posibleDomains">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
